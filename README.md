@@ -2,12 +2,14 @@
 Класс для роботи з API Freelancehunt
 
 Приклад роботи:
+<pre>
 $your_token = '1231231235423';
 $your_secret = 'adsasd123asdasd34112asdasd123';
 $Freelancehunt = new Freelancehunt_API(your_token,your_secret);
 $userDataWithPortfolio = $Freelancehunt->getUserProfile( 'Ranivel', array( 'portfolio' ) );
-
+</pre>
 Приклад відповіді:
+<pre>
 {
     "avatar": "https://content.freelancehunt.com/profile/photo/50/Ranivel.png",
     "avatar_md": "https://content.freelancehunt.com/profile/photo/225/Ranivel.png",
@@ -87,11 +89,12 @@ $userDataWithPortfolio = $Freelancehunt->getUserProfile( 'Ranivel', array( 'port
     "url_private_message": "https://freelancehunt.com/mailbox/sendmessage/attach/no/to/17040",
     "website": null
 }
-
+</pre>
 Ще один приклад. Отримання переписок:
-$userDataWithPortfolio = $Freelancehunt->getThreads( array( 'page' => 1, 'per_page' => 1 ) );
+<pre>$userDataWithPortfolio = $Freelancehunt->getThreads( array( 'page' => 1, 'per_page' => 1 ) );</pre>
 
 Відповідь:
+<pre>
 [
   {
     "thread_id":"2518260",
@@ -120,3 +123,4 @@ $userDataWithPortfolio = $Freelancehunt->getThreads( array( 'page' => 1, 'per_pa
      "is_unread":null
   }
 ]
+</pre>
