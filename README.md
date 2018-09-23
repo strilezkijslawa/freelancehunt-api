@@ -5,7 +5,7 @@
 <pre>
 $your_token = '1231231235423';
 $your_secret = 'adsasd123asdasd34112asdasd123';
-$Freelancehunt = new Freelancehunt_API(your_token,your_secret);
+$Freelancehunt = new Freelancehunt_API($your_token,$your_secret);
 $userDataWithPortfolio = $Freelancehunt->getUserProfile( 'Ranivel', array( 'portfolio' ) );
 </pre>
 Приклад відповіді:
