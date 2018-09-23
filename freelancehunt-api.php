@@ -7,8 +7,13 @@
 
 class Freelancehunt_API
 {
-    private $_api_token = 'your_token';
-    private $_api_secret = 'your_secret';
+    private $_api_token;
+    private $_api_secret;
+    
+    public function __construct( $your_token, $your_secret ) {
+        $this->_api_token = $your_token;
+        $this->_api_secret = $your_secret;
+    }
 
     /**
      * User sign
